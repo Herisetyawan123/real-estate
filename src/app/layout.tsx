@@ -1,7 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import ReduxProvider from '@/redux/provider'
-import { ubuntu } from '@/lib/style/theme';
+import { ubuntu } from '@/components/style/theme';
 
 export const metadata: Metadata = {
   title: 'Real Estate - Jember',

@@ -1,9 +1,12 @@
-import Image from 'next/image'
+import Navbar from '@/components/organisme/navbar'
 
 export default function Home() {
   return (
-    <main className="">
+    <>
+      <Navbar />
+      <main className="">
 
-    </main>
+      </main>
+    </>
   )
 }
