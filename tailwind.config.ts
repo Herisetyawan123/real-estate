@@ -17,13 +17,15 @@ const config: Config = {
         'primary': "#0C0C1D",
         'white': "#FFFFFF",
         'blue': "#4B73FF",
-        'white-s': "#F7F9FB"
+        'white-s': "#F7F9FB",
+        'p-grey': '#e4e9ec'
       },
       textColor: {
         'primary': "#0C0C1D",
         'white': "#FFFFFF",
         'blue': "#4B73FF",
-        'white-s': "#F7F9FB"
+        'white-s': "#F7F9FB",
+        'p-grey': '#e4e9ec'
       }
     },
   },

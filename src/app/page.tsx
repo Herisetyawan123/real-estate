@@ -1,3 +1,4 @@
+import Hero from '@/components/organisme/hero/hero'
 import Navbar from '@/components/organisme/navbar'
 
 export default function Home() {
@@ -5,7 +6,7 @@ export default function Home() {
     <>
       <Navbar />
       <main className="">
-
+        <Hero />
       </main>
     </>
   )
