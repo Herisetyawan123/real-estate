@@ -10,13 +10,13 @@ export default function NavLeft() {
         <NavLink href='/'>
           Home
         </NavLink>
-        <NavLink href='/'>
+        <NavLink href='/apartement'>
           Rent
         </NavLink>
-        <NavLink href='/'>
+        <NavLink href='/apartement'>
           Sell
         </NavLink>
-        <NavLink href='/'>
+        <NavLink href='#about'>
           About
         </NavLink>
       </div>

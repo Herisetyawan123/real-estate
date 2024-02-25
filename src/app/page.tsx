@@ -5,18 +5,26 @@ import Hero from '@/components/organisme/hero/hero'
 import Navbar from '@/components/organisme/navbar'
 
 
-export default function Home() {
+export default async function Home() {
+
+  const data = await getApartement();
 
   return (
     <>
-      <Navbar />
       <main className="">
         <Hero />
         <ContactUs />
         <Information />
-        <OurPopularProperty />
+        <OurPopularProperty apartement={data} />
       </main>
 
     </>
   )
+}
+
+export async function getApartement() {
+  // Fetch data from external API
+  const res = await fetch(`https://real-estate-iota-tan.vercel.app/api/apartement`)
+  const data = await res.json()
+  return  data;
 }
