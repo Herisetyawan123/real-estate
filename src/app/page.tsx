@@ -3,6 +3,8 @@ import ContactUs from '@/components/organisme/contact-us/contact-us'
 import Information from '@/components/organisme/information/information'
 import OurPopularProperty from '@/components/organisme/our-popular-property/our-popular-property'
 import Footer from '@/components/organisme/footer/footer'
+import { store } from '@/redux/store'
+import { addApartement } from '@/redux/features/apartement-slice'
 
 
 export default async function Home() {
@@ -24,8 +26,8 @@ export default async function Home() {
 }
 
 async function getApartement() {
-  // Fetch data from external API
   const res = await fetch(`https://real-estate-iota-tan.vercel.app/api/apartement`)
   const data = await res.json()
+  store.dispatch(addApartement(data.data));
   return  data;
 }

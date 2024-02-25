@@ -21,21 +21,11 @@ export const apart = createSlice({
     name: 'apart',
     initialState: initialState,
     reducers: {
-        get: () => {
-            
+        addApartement: (state, action) => {
+            state.value = [...state.value, action.payload]
         },
     },
-    extraReducers: (builder) => {
-        builder.addCase(fetchApartement.fulfilled, (state, action) => {
-            state.loading = false;
-            state.value.push(...action.payload)
-        });
-
-        builder.addCase(fetchApartement.pending, (state, action) => {
-            state.loading = true;
-        })
-    }
 })
 
-export const { get } = apart.actions;
+export const { addApartement } = apart.actions;
 export default apart.reducer;
