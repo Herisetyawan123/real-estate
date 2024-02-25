@@ -1,7 +1,8 @@
+import Hero from '@/components/organisme/hero/hero'
 import ContactUs from '@/components/organisme/contact-us/contact-us'
 import Information from '@/components/organisme/information/information'
 import OurPopularProperty from '@/components/organisme/our-popular-property/our-popular-property'
-import Hero from '@/components/organisme/hero/hero'
+import Footer from '@/components/organisme/footer/footer'
 
 
 export default async function Home() {
@@ -15,6 +16,7 @@ export default async function Home() {
         <ContactUs />
         <Information />
         <OurPopularProperty apartement={data} type='home' />
+        <Footer />
       </main>
 
     </>
