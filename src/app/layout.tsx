@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     url: 'https://heri-setyawan.vercel.app/',
     name: 'Heri Setyawan',
   },
-  keywords: ['real estate', 'estate', 'properti', 'apartement']
+  keywords: ['real estate', 'estate', 'properti', 'apartement'],
 }
 
 export default function RootLayout({
@@ -21,6 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <meta name="google-site-verification" content="sFnsk503vbs7hU7hRn36fNxQ5YfHYgPZDaULrjA7Sk4" />
       <body className={ubuntu.className}>
         <ReduxProvider>
           <Navbar />
