@@ -23,7 +23,7 @@ export default async function Home() {
   )
 }
 
-export async function getApartement() {
+async function getApartement() {
   // Fetch data from external API
   const res = await fetch(`https://real-estate-iota-tan.vercel.app/api/apartement`)
   const data = await res.json()
