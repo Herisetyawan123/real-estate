@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function NavRight() {
   return (
-    <div className="flex gap-5 items-center">
+    <div className="hidden md:flex gap-5 items-center">
         <NavLink href="/login" >
           Login
         </NavLink>

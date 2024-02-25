@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function NavLogo() {
   return (
-    <div>
+    <div className=''>
         <Link href={'/'} className='font-semibold' >
             RealEstateJ
         </Link>

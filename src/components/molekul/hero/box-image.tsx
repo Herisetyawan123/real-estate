@@ -13,7 +13,7 @@ const style: React.CSSProperties = {
 
 export default function BoxImage({ children, className }: ChildrenType & { className?: string }) {
   return (
-    <div className={"bg-p-grey w-full md:h-[38rem] rounded-3xl relative "+className} style={style}>
+    <div className={"bg-p-grey w-full h-[30rem] md:h-[38rem] rounded-3xl relative "+className} style={style}>
         { children }
         <BoxSearch />
     </div>

@@ -6,7 +6,7 @@ export default function NavLeft() {
   return (
     <div className='flex gap-10 items-center'>
       <NavLogo />
-      <div className='flex gap-14'>
+      <div className='hidden md:flex gap-14'>
         <NavLink href='/'>
           Home
         </NavLink>

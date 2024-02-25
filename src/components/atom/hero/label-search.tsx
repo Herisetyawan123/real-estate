@@ -11,7 +11,7 @@ export default function LabelSearch({ name, value }: PropsType) {
             <h5>
                 {name}
             </h5>
-            <input type="text" value={value} className='block text-sm text-gray-400 py-1 focus:outline-none' />
+            <input type="text" defaultValue={value} className='block text-sm text-gray-400 py-1 focus:outline-none' />
         </div>
     )
 }
