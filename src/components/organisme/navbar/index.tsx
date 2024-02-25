@@ -23,7 +23,7 @@ export default function Navbar() {
         <NavLeft />
         <NavRight />
         <div className="block md:hidden">
-          <Button colorScheme='teal'>
+          <Button colorScheme='teal' onClick={onOpen}>
             <CiMenuFries size={20} />
           </Button>
 
