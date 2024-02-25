@@ -1,3 +1,4 @@
+import ContactUs from '@/components/organisme/contact-us/contact-us'
 import Hero from '@/components/organisme/hero/hero'
 import Navbar from '@/components/organisme/navbar'
 
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar />
       <main className="">
         <Hero />
+        <ContactUs />
       </main>
 
     </>

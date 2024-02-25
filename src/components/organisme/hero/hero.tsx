@@ -4,7 +4,7 @@ import React from 'react'
 export default function Hero() {
   return (
     <>
-      <section className='px-8 md:px-16 pt-10 pb-20 bg-white-s'>
+      <section className='px-8 md:px-16 pt-10 pb-36 bg-white-s'>
         {/* image */}
         <BoxImage className='flex flex-col items-center py-10 px-3 md:px-52 lg:px-72'>
           <h1 className='text-center text-xl md:text-6xl'>Investing In Your Future One Home At A Time</h1>
