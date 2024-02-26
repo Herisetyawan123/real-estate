@@ -5,6 +5,7 @@ import OurPopularProperty from '@/components/organisme/our-popular-property/our-
 import Footer from '@/components/organisme/footer/footer'
 import { store } from '@/redux/store'
 import { addApartement } from '@/redux/features/apartement-slice'
+import CustomerSection from '@/components/organisme/customer-section'
 
 
 export default async function Home() {
@@ -18,6 +19,7 @@ export default async function Home() {
         <ContactUs />
         <Information />
         <OurPopularProperty apartement={data} type='home' />
+        <CustomerSection />
         <Footer />
       </main>
 
