@@ -1,14 +1,12 @@
 import React from 'react'
 import BoxSearch from './box-search'
-import BgHero from "@/assets/hero-2.jpg";
-import { ClassNames } from '@emotion/react';
-
+import BgHero from "@/assets/hero.jpg";
 
 const style: React.CSSProperties = {
   backgroundImage: `url(${BgHero.src})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
-  // backgroundPositionY: -150,
+  backgroundPositionY: -250,
 }
 
 export default function BoxImage({ children, className }: ChildrenType & { className?: string }) {

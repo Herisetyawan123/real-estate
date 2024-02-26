@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 
 
 type InitialState = {
@@ -10,12 +10,6 @@ const initialState: InitialState = {
     loading: true,
     value: []
 }
-
-export const fetchApartement = createAsyncThunk('api/apartement', async (thunkApi) => {
-    const resp = await fetch('/api/apartement');
-    const data = await resp.json();
-    return data;
-});
 
 export const apart = createSlice({
     name: 'apart',
